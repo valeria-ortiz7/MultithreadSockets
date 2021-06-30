@@ -1,0 +1,6 @@
+#ifndef PROYECTO_SERVER_H
+#define PROYECTO_SERVER_H
+
+#define PORT 15557
+
+#endif //PROYECTO_SERVER_H
