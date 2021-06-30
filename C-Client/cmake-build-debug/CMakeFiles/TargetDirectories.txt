@@ -1,0 +1,3 @@
+/home/qplaxy/CLionProjects/ClientSocket/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/qplaxy/CLionProjects/ClientSocket/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/qplaxy/CLionProjects/ClientSocket/cmake-build-debug/CMakeFiles/ClientSocket.dir
