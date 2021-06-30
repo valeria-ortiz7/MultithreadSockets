@@ -29,13 +29,17 @@ public class Server {
 
         String respuesta = "";
 
+        /**
+         * EN: If you want to give a response based on input
+         * SP: Si se quiere dar una respuesta según lo recibido
+         */
         if (solicitud_cliente.equals("Hola Server")) {
             respuesta = "Hola Cliente\n";
         }
 
         /**
-         * EN : Echoes the message
-         * SP : Regresa el mensaje
+         * EN : If you only want to echo the message
+         * SP : Si se quiere solo regresar el mensaje recibido
          */
         else {
             respuesta = solicitud_cliente;
