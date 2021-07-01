@@ -19,9 +19,6 @@ char* enviar_mensaje(char* mensaje_solicitud)
     struct sockaddr_in socket_servidor;
     char respuesta_servidor[2000];
 
-    char *IP_ADDRESS = "127.0.0.1";
-    int PORT = 17778;
-
     /** EN: Initializes the client socket
      * SP: Inicializa el socket del cliente
      */
