@@ -40,9 +40,9 @@ GCC is used to compile in C, if you do not have it, type the following in the co
 
 ## To run the Java server: 
 1. Go to the terminal and move to the location where the file is
-2. Type the command `javac Server.java` to compile the program
+2. Type the command `javac Main.java` to compile the program
 3. If it compiles successfully, it will generate a file called "Server.class"
-4. To run the program, now type the command `java Server`
+4. To run the program, now type the command `java Main`
 
 ## To run the C server: 
 1. Go to the terminal and move to the location where the file is
@@ -53,11 +53,11 @@ GCC is used to compile in C, if you do not have it, type the following in the co
 After one of the servers is running, connect a client using:
 
 ### Java
-`javac Client.java`
-`java Client`
+`javac Main.java`
+`java Main`
 
 ### C
-`gcc -o Client Client.c`
+`gcc -o Client SocketCliente.c`
 `./Client`
 
 # Author
@@ -70,8 +70,8 @@ Conexión Servidor - Cliente por medio de sockets TCP/IP.
 
 # Descripción del proyecto
 El proyecto contiene tanto un sistema Servidor multihilos/multithreaded - Cliente en Java como un sistema Servidor multihilos/multithreaded - Cliente en C, comunicándose por TCP/IP.
+
 La comunicación no es por medio de leer mensajes de la línea de comandos, los mensajes que se envían deben estar en el código.
-Basado en AF_UNIX sockets.
 
 # Funcionalidad del proyecto
 Los sockets permitirán una comunicación en los siguientes escenarios:
@@ -85,6 +85,8 @@ Los sockets permitirán una comunicación en los siguientes escenarios:
 # Notas importantes para principiantes
 El servidor se puede iniciar ya sea en Java o C y va a poder manejar clientes en cualquiera de los lenguajes.
 No hace falta tener una conexión servidor Java o cliente Java, o por el estilo. 
+
+El puerto se puede cambiar, pero debe ser el mismo en el servidor y en el cliente.
 
 # Requerimientos del sistema
 Proyecto desarrollado en Linux.
@@ -105,9 +107,9 @@ GCC es usado para compilar en C, se instala de la siguiente manera:
 
 ## Para correr el servidor en Java:
 1. Abrir la terminal y moverse a la ubicación donde se encuentra el archivo
-2. Escriba el comando `javac Server.java` para compilar el programa
-3. If it compiles successfully, it will generate a file called "Server.class"
-4. To run the program, now type the command `java Server`
+2. Escriba el comando `javac Main.java` para compilar el programa
+3. If it compiles successfully, it will generate a file called "Main.class"
+4. To run the program, now type the command `java Main`
 
 ## Para correr el servidor en C:
 1. Abrir la terminal y moverse a la ubicación donde se encuentra el archivo
@@ -118,11 +120,11 @@ GCC es usado para compilar en C, se instala de la siguiente manera:
 Cuando uno de los servidores esté corriendo, inicie alguno de los clientes:
 
 ### Java
-`javac Client.java`
-`java Client`
+`javac Main.java`
+`java Main`
 
 ### C
-`gcc -o Client Client.c`
+`gcc -o Client SocketCliente.c`
 `./Client`
 
 # Autora
