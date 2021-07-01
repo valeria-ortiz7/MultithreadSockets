@@ -17,15 +17,15 @@ import java.net.*;
 public class Server {
 
     /**
-     * @func solicitudCliente
+     * @func solicitud_cliente
      *
      * @desc EN: Receives the client string and defines the response
      * @desc SP: Recive el string enviado por el cliente y define la respuesta
      *
-     * @param solicitud_cliente  String with the client request | String con el mensaje del request del cliente
+     * @param mensaje_cliente String with the client request | String con el mensaje del request del cliente
      * @return String with the answer | String con los datos que se solicitan
      */
-    public static String solicitudCliente(String solicitud_cliente) {
+    public static String solicitud_cliente(String mensaje_cliente) {
 
         String respuesta = "";
 
@@ -33,7 +33,7 @@ public class Server {
          * EN: If you want to give a response based on input
          * SP: Si se quiere dar una respuesta según lo recibido
          */
-        if (solicitud_cliente.equals("Hola Server")) {
+        if (mensaje_cliente.equals("Hola Server")) {
             respuesta = "Hola Cliente\n";
         }
 
@@ -42,7 +42,7 @@ public class Server {
          * SP : Si se quiere solo regresar el mensaje recibido
          */
         else {
-            respuesta = solicitud_cliente;
+            respuesta = mensaje_cliente;
         }
 
         return respuesta;
@@ -82,14 +82,14 @@ public class Server {
                  * EN: Interprets the message to a string
                  * SP: Interpreta en forma de string la solicitud del cliente
                  */
-                String solicitud_cliente = recibido.readLine();
-                System.out.println(solicitud_cliente);
+                String mensaje_cliente = recibido.readLine();
+                System.out.println(mensaje_cliente);
 
                 /**
                  * EN: Passes the client's message to solicitudCliente to generate a response
                  * SP: Pasa el mensaje del cliente a solicitudCliente para generar una respuesta
                  */
-                String respuesta = solicitudCliente(solicitud_cliente);
+                String respuesta = solicitud_cliente(mensaje_cliente);
 
                 /**
                  * EN: Send the response to the client
