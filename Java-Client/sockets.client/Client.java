@@ -17,12 +17,12 @@ public class Client {
     static final int PUERTO = 17778;
 
     /**
-     * @func iniciar_conexion
+     * @func enviar_mensaje
      *
      * @param mensaje Message to be sent to the server | Mensaje que se quiere enviar al server
      * @return String with the server response | String con la respuesta del server
      */
-    public String iniciar_conexion(String mensaje)
+    public String enviar_mensaje(String mensaje)
     {
         Socket socket_cliente = null;
 
